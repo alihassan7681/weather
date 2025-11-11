@@ -16,7 +16,7 @@ const SavedLocationsView = ({
         darkTheme ? 'text-white' : 'text-gray-800'
       }`}
     >
-      {/* 🌤️ Background Image */}
+      {/*  Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -25,10 +25,10 @@ const SavedLocationsView = ({
         }}
       ></div>
 
-      {/* 🌫️ Gradient Overlay */}
+      {/*  Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/60 via-indigo-900/60 to-gray-900/70"></div>
 
-      {/* 🔮 Header */}
+      {/*  Header */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -58,7 +58,7 @@ const SavedLocationsView = ({
         </button>
       </motion.div>
 
-      {/* 📍 Content */}
+      {/*  Content */}
       <div className="relative z-10 p-6">
         {savedLocations.length === 0 ? (
           <motion.div
@@ -143,7 +143,7 @@ const SavedLocationsView = ({
           </div>
         )}
 
-        {/* 💡 Tips */}
+        {/*  Tips */}
         {savedLocations.length > 0 && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
